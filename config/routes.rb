@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "prototypes#index"
+  root  'users#index'  #この1行を追加
   get 'prototypes/new', to: 'prototypes#new'
   resources :prototypes do
     resources :comments, only: :create
