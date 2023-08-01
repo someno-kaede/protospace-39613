@@ -19,7 +19,7 @@ class PrototypesController < ApplicationController
   def update
     prototype = Prototype.find(params[:id])
     prototype.update(prototype_params)
-    redirect_to prototype_path
+    redirect_to root_path
   end
 
   def show
